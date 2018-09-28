@@ -1,44 +1,39 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background-color: #e3e3e3;
-  color: #373e3e;
+  font-family: 'Notable', sans-serif;
+  background-color: #F7CFD3;
+  color: #0227B8;
   line-height: 40px;
-  font-size:13px
+  font-size:48px
 }
 h1, h2, h3 {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  letter-spacing: -0.8px;
+  letter-spacing: 1px;
 }
 p {
   text-align: justify;
 }
 a {
-  color: #ccc;
+  color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #FFF;
-  text-decoration: none;
-  background-color: #1c81a8;
+  color: yellow;
+  text-decoration: underline;
 }
 table {
   font-weight: 300;
   font-size: 15px;
   line-height: 1.6em;
 }
-.img-movies {
-width:150px;
-margin:20px;
-}
-
 .text-center {
   text-align: center;
 }
 .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   margin: 30px auto;
+  height: 90vh;
 }
 .card {
   background: white;
@@ -60,7 +55,6 @@ ul {
 #img-profile{
   width: 100px;
   height: 100px;
-  border: 3px solid #cccccc;
   border-radius: 50%;
 }
 .btn-blue {
