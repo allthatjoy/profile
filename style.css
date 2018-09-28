@@ -1,116 +1,31 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background-color: #e3e3e3;
-  color: #373e3e;
+  font-family: 'Notable', sans-serif;
+  background-color: #F7CFD3;
+  color: #0227B8;
   line-height: 40px;
-  font-size:13px
+  font-size:48px
 }
-h1, h2, h3 {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  letter-spacing: -0.8px;
-}
-p {
-  text-align: justify;
+h1 {
+  letter-spacing: 1px;
 }
 a {
-  color: #ccc;
+  color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #FFF;
-  text-decoration: none;
-  background-color: #1c81a8;
+  color: yellow;
+  text-decoration: underline;
 }
-table {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 1.6em;
-}
-.img-movies {
-width:150px;
-margin:20px;
-}
-
 .text-center {
   text-align: center;
 }
 .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   margin: 30px auto;
-}
-.card {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-}
-.card > p {
-text-align: center;
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}​
-.img-circle{
-  border-radius: 50%;
-}
-#img-profile{
-  width: 100px;
-  height: 100px;
-  border: 3px solid #cccccc;
-  border-radius: 50%;
-}
-.btn-blue {
-    background-color: #6EACCF;
-    color: white;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 4px;
-}
-.list-inline {
-  padding-left: 0;
-}
-.list-inline li {
-  display: inline-block;
-  padding: 20px;
-}
-.list-inline li i{
-  font-size: 25px;
-}
-.list-inline li a:hover {
-  none;
-}
-/*sidebar*/
-#sidebar {
-  background-color: #384047;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  width: 120px;
-  text-align: center;
-}
-#sidebar ul {
-  list-style: none;
-  padding-left: 0px;
-}
-#sidebar li {
-  margin-top:50px;
-  margin-bottom: 50px;
-}
-#sidebar a {
-  text-decoration: none;
-  font-size: 25px;
-  color:#788188;
-}
-#sidebar a:hover {
-  color: white;
-}
-#content{
-  margin-left: 120px;
+  height: 90vh;
 }
 /* Responsive layout  */
 @media (max-width: 960px) {
@@ -131,11 +46,13 @@ ul {
     width: 400px;
   }
 }
-@media (max-width: 768px) {
-  #content{
-    margin-left: 0px;
+@media (max-width: 375px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container{
+    width: 360px;
   }
-  #sidebar {
-    display: none;
+  body{
+    font-size: 35px;
   }
 }
+
